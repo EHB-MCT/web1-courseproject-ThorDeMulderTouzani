@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+
+h2 {
+    font-size: 8rem;
+}
+
+
+
+h3 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    font-size: 2.1rem;
+}
+
+figcaption{
+    font-size: 1.6rem;
+}
+
+li{
+    font-size: 1.6rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+body {
+    background-color: var(--blue);
+}

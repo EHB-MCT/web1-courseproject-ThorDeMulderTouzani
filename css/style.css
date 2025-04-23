@@ -1,3 +1,112 @@
-body{
-    background-color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html{
+    font-family: "Inter", sans-serif;
 }
+
+/*--------------------------------------------------nav*/
+nav{
+    background-color: #1e1e1e;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+}
+
+nav ul li{
+    font-size: 16px;
+    margin: 3%;
+    font-style: none;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #ffcc00;
+  }
+
+nav section{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+nav img{
+    width: 50%;
+    padding: 4%;
+}
+
+nav section h1{
+    color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+nav section p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    color: white;
+}
+
+nav section p, nav section h1{
+    padding-top: 2.5%;
+}
+
+
+
+/*-------------------------------------------------Footer*/
+.site-footer {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-nav {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .footer-nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #ffcc00;
+  }
+  
+  .footer-note {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #999;
+  }
+  
+  /* Responsive font size for small screens */
+  @media (max-width: 600px) {
+    .site-footer {
+      font-size: 0.85rem;
+    }
+  }
+  
