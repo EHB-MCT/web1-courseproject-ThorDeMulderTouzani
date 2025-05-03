@@ -86,6 +86,12 @@ header section{
   line-height: 23px;
 }
 
+/*-------------------------------------------------header ervaring*/
+
+.header-ervaring{
+  line-height: 40px;
+}
+
 /*-------------------------------------------------Main*/
 
 main{
@@ -109,6 +115,11 @@ main img{
   border-radius: 10px;
 }
 
+/*-------------------------------------------------main ervaring*/
+
+.main-ervaring{
+  line-height: 60px;
+}
 
 /*-------------------------------------------------Footer*/
 .site-footer {
@@ -124,23 +135,13 @@ main img{
     max-width: 1000px;
     margin: 0 auto;
   }
-  
-  .footer-nav {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+
+  .footer-copy{
+    padding-bottom: 0.7%;
   }
-  
-  .footer-nav a {
-    color: #f1f1f1;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-nav a:hover {
-    color: #ffcc00;
+
+  .footer-mail{
+    color: #472244;
   }
   
   .footer-note {
