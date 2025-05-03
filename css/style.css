@@ -6,7 +6,7 @@ html{
 
 /*--------------------------------------------------nav*/
 nav{
-    background-color: #1e1e1e;
+    background-color: #0041A0;
     margin-bottom: 5%;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -64,15 +64,60 @@ nav section p, nav section h1{
     padding-top: 2.5%;
 }
 
+/*-------------------------------------------------Header*/
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+header img{
+  width: 70%;
+  border-radius: 10px;
+}
+
+header section{
+  padding: 3%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  line-height: 23px;
+}
+
+/*-------------------------------------------------Main*/
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+}
+
+main section{
+  padding-top: 8%;
+  color: rgb(0, 0, 0);
+}
+
+main ul{
+  padding-top: 5%;
+  line-height: 35px;
+}
+
+main img{
+  border-radius: 10px;
+}
 
 
 /*-------------------------------------------------Footer*/
 .site-footer {
-    background-color: #1e1e1e;
+    background-color: #0041A0;
     color: #f1f1f1;
     padding: 2rem 1rem;
     font-size: 0.9rem;
     text-align: center;
+    margin-top: 5%;
   }
   
   .footer-container {
