@@ -2,6 +2,7 @@
 
 html{
     font-family: "Inter", sans-serif;
+    background-color: #00378a;
 }
 
 /*--------------------------------------------------nav*/
@@ -77,19 +78,26 @@ header{
 header img{
   width: 70%;
   border-radius: 10px;
+  box-shadow: 10%;
 }
 
 header section{
   padding: 3%;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: left;
-  line-height: 23px;
+  line-height: 21px;
 }
 
 /*-------------------------------------------------header ervaring*/
 
 .header-ervaring{
   line-height: 40px;
+}
+
+header section>h2{
+  padding-bottom: 3%;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 /*-------------------------------------------------Main*/
@@ -103,7 +111,12 @@ main{
 
 main section{
   padding-top: 8%;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+main section>h2{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 main ul{
@@ -119,6 +132,38 @@ main img{
 
 .main-ervaring{
   line-height: 60px;
+}
+
+/*---------------------------------------------------Aside ervaring*/
+
+aside{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+aside img{
+  width: 100%;
+  grid-column: 1/2;
+  border-radius: 10px;
+}
+
+aside section{
+  padding: 4%;
+  line-height: 40px;
+  color: white;
+}
+
+aside section>h2{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  padding-bottom: 3%;
+}
+
+aside section+img{
+  grid-column: 3/4;
 }
 
 /*-------------------------------------------------Footer*/
@@ -141,7 +186,7 @@ main img{
   }
 
   .footer-mail{
-    color: #472244;
+    color: #ffcc00;
   }
   
   .footer-note {
