@@ -1,238 +1,92 @@
-@media screen and (min-width: 768px) {
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@media only screen and (max-width: 600px){
+  
+  /*-------------------------------Nav*/
 
-html{
-    font-family: "Inter", sans-serif;
-    background-color: #00378a;
-}
-
-/*--------------------------------------------------nav*/
-nav{
-    background-color: #0041A0;
-    margin-bottom: 5%;
-    justify-content: center;
-}
-
-nav ul li{
-    font-size: 16px;
-    margin: 3%;
-    font-style: none;
-}
-
-nav ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    text-align: right;
-    align-self: center;
-    grid-column: 2/3;  
-}
-
-#myLinks{
-    display: inline-block !important;
-    grid-column: 3/4;
-    grid-row: 1/3;
-    align-self: center;
-}
-
-a.icon{
+  nav ul{
     display: none;
 }
-
-nav a:hover {
-    color: #ffcc00;
+  
+  nav img{
+    width: 80%;
+    align-self: center;
   }
 
-nav section{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-}
+  nav h1{
+    font-size: 2rem;
+  }
 
-nav img{
-    width: 50%;
-    padding: 4%;
-    justify-self: center;
-    grid-row: 1/3;
-}
+  nav section p{
+    font-size: 1.5rem;
+  }
+  
+  nav section+a{
+  display: flex;
+  justify-self: end;
+  align-self: center;
+  padding-right: 20px;
+  }
 
-nav section h1{
-    color: white;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding-top: 2.5%;
-}
+  /*-------------------------------Header*/
 
-nav section p{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    align-self: center;
-    color: white;
-    margin-bottom: 3%;
-}
-
-/*-------------------------------------------------Header*/
-
-header{
+  header{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 80%;
-  margin: auto;
-  margin-bottom: 10%;
-}
+  grid-template-columns: 1fr;
+  max-width: 95%;
+  }
 
-header img{
-  width: 70%;
-  border-radius: 10px;
-  box-shadow: 10%;
-}
-
-header section{
-  padding: 3%;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  line-height: 21px;
-}
-
-/*-------------------------------------------------header ervaring*/
-
-.header-ervaring{
-  line-height: 40px;
-}
-
-header section>h2{
-  padding-bottom: 3%;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-/*-------------------------------------------------Main*/
-
-main{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 80%;
-  margin: auto;
-}
-
-main section{
-  padding-top: 8%;
-  color: rgb(255, 255, 255);
-}
-
-main section>h2{
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-main ul{
-  padding-top: 5%;
-  line-height: 35px;
-}
-
-main img{
-  border-radius: 10px;
-}
-
-/*-------------------------------------------------main ervaring*/
-
-.main-ervaring{
-  line-height: 60px;
-}
-
-/*---------------------------------------------------Aside ervaring*/
-
-aside{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 80%;
-  margin: auto;
-  margin-top: 10%;
-}
-
-aside img{
+  header img{
   width: 100%;
-  grid-column: 1/2;
-  border-radius: 10px;
-}
+  }
 
-aside section{
-  padding: 4%;
-  line-height: 40px;
-  color: white;
-}
+  /*--------------------------------HeaderErvaring*/
 
-aside section>h2{
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-  padding-bottom: 3%;
-}
+  .header-ervaring{
+  line-height: 30px;
+  }
 
-aside section+img{
-  grid-column: 3/4;
-}
+  /*--------------------------------Main*/
 
-/*-------------------------------------------------Aside-vaardigheden*/
+  main{
+  grid-template-columns: 1fr;
+  max-width: 95%;
+  }
 
-.aside-vaardigheden{
+  main section{
+    padding: 3%;
+    grid-row: 2/3;
+  }
+
+  main ul{
+    line-height: 30px;
+  }
+
+  /*---------------------------------MainErvaring*/
+
+  .main-ervaring{
+  line-height: 30px;
+  }
+
+  /*---------------------------------aside*/
+
+  aside{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  max-width: 95%;
+  }
+
+  aside section{
+    line-height: 30px;
+  }
+
+  aside section+img{
+  grid-column: 1/3;
+  }
+
+  /*---------------------------------AsideVaardigheden*/
+  
+  .aside-vaardigheden{
   grid-template-columns: 2fr 1fr 1fr 2fr;
   grid-template-rows: 1fr 0.2fr 1.5fr;
-  max-width: 50%;
+  max-width: 95%;
 }
-
-.aside-vaardigheden>img{
-  grid-column: 1/3;
-  grid-row: 1/5;
-}
-
-.aside-vaardigheden section{
-  grid-column: 3/5;
-}
-
-.aside-vaardigheden section+img{
-  grid-column: 2/5;
-  grid-row: 3/4;
-}
-
-/*-------------------------------------------------Footer*/
-.site-footer {
-    background-color: #0041A0;
-    color: #f1f1f1;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-    text-align: center;
-    margin-top: 5%;
-  }
-  
-  .footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .footer-copy{
-    padding-bottom: 0.7%;
-  }
-
-  .footer-mail{
-    color: #ffcc00;
-  }
-  
-  .footer-note {
-    margin-top: 1rem;
-    font-style: italic;
-    color: #999;
-  }
-  
-  /* Responsive font size for small screens */
-  @media (max-width: 600px) {
-    .site-footer {
-      font-size: 0.85rem;
-    }
-  }
-  
 }
