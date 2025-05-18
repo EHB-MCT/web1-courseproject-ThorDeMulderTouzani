@@ -74,19 +74,29 @@
   max-width: 95%;
   }
 
-  aside section{
+  .Aside-Section-Ervaring{
     line-height: 30px;
+    grid-column: 1/3;
+    grid-row: 2/3;
   }
 
   aside section+img{
   grid-column: 1/3;
   }
 
+  .dailyplanet{
+    display: none;
+  }
+
   /*---------------------------------AsideVaardigheden*/
   
   .aside-vaardigheden{
   grid-template-columns: 2fr 1fr 1fr 2fr;
-  grid-template-rows: 1fr 0.2fr 1.5fr;
+  grid-template-rows: 1fr 0.2fr;
   max-width: 95%;
-}
+  }
+
+  aside section{
+    line-height: 30px;
+  }
 }
